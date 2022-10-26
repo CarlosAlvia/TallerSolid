@@ -27,3 +27,5 @@ En efecto incumple con el principio Dependency Inversion, pues estaba dependiend
 ***5. Paquete Leche y la clase Procesos.ManejadorDeLeche. En el main descomente las instrucciones para realizar el cambio del tipo de leche utilizada en cada postre, luego analice como solucionar el error generado en la clase Leche.LecheDeslactosada.***
 
 Aqui se incumple el principio Liskov Substitution, aunque también de alguna manera el principio Dependency Inversion pues está dependiendo en mayor medida de las clases hijas que del padre que debería ser una clase abstracta.
+
+¡[Image text] (https://github.com/CarlosAlvia/TallerSolid/blob/main/Imagenejecuci%C3%B3n.png)
