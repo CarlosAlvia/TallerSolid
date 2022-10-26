@@ -14,13 +14,12 @@ public class Postre {
 	public Postre(String sabor) {
 		this.sabor=sabor;
 		aderezos=new ArrayList<>();
-                this.Tipoleche = new LecheEntera();
 	}
 	public ArrayList<Aderezo> getAderezos() {
         return aderezos;
     }
 	
-	public void agregarAderezo(Aderezo aderezo) {
+	public void addAderezos(Aderezo aderezo) {
 		aderezos.add(aderezo);
 	}
 	public void quitarAderezo(Aderezo aderezo) {

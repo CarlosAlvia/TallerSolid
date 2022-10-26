@@ -13,7 +13,7 @@ public class LecheDescremada extends LecheEntera {
     
     @Override
     public void usarPostre(){
-        System.out.println("Usando leche deslactosada");
+        System.out.println("Usando leche descremada");
     }
     
 }

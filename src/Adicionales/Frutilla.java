@@ -2,7 +2,6 @@ package Adicionales;
 
 public class Frutilla extends Aderezo{
 	
-	private String nombre;
 	
 	public Frutilla() {
 		this.nombre = "Frutilla";
