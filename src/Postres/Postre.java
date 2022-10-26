@@ -11,10 +11,10 @@ public class Postre {
 	protected ArrayList<Aderezo> aderezos;
         protected LecheEntera Tipoleche;
 	
-	public Postre(String sabor,LecheEntera Tipoleche) {
+	public Postre(String sabor) {
 		this.sabor=sabor;
 		aderezos=new ArrayList<>();
-                this.Tipoleche = Tipoleche;
+                this.Tipoleche = new LecheEntera();
 	}
 	public ArrayList<Aderezo> getAderezos() {
         return aderezos;

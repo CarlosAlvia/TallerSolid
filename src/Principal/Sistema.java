@@ -8,6 +8,7 @@ import Adicionales.Aderezo;
 import Postres.*;
 import Procesos.*;
 import Leche.*;
+import java.util.ArrayList;
 /**
  *
  * @author djurado
@@ -18,25 +19,24 @@ public class Sistema {
         // a ambos agregarles CREMA y FRUTILLAS
         // y cambiar el tipo de leche por Leche Descremada
         // Finalmente mostrar el precio final de cada uno
-        LecheEntera leche = new LecheDeslactosada();
-        ManejadorDeLeche mnj_leche = new ManejadorDeLeche();
+        ArrayList<Postre> arrPostres = new ArrayList<>();
+        ManejadorDeLeche mnj_leche = new ManejadorDeLeche(new LecheDescremada());
         
         // Producir Helado
-        Helado helado_vainilla = new Helado("Vainilla");
-        OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.CREMA);
-        OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.FRUTILLA);
-        System.out.println(helado_vainilla);
-//        mnj_leche.cambiarTipoLeche(leche, helado_vainilla);
-        System.out.println(helado_vainilla.showPrecioFinal());
-        
+        Postre helado_vainilla = new Helado("Vainilla");
+        arrPostres.add(helado_vainilla);
         // Producir Pastel
-        Pastel pastel_chocolate = new Pastel("Chocolate");
-        OperacionesAderezo.quitarAderezoPastel(pastel_chocolate, Aderezo.CREMA);
-        OperacionesAderezo.anadirAderezoPastel(pastel_chocolate, Aderezo.FRUTILLA);
-        System.out.println(pastel_chocolate);
-//        mnj_leche.cambiarTipoLeche(leche, pastel_chocolate);
-        System.out.println(helado_vainilla.showPrecioFinal());
+        Postre pastel_chocolate = new Pastel("Chocolate");
+        arrPostres.add(pastel_chocolate);
         
+        arrPostres.forEach(postre -> {
+            postre.addAderezos(new Crema());
+            postre.addAderezos(new Frutilla());
+            System.out.println(postre);
+            ManejadorDeLeche.cambiarTipoLeche(postre);
+            System.out.println(ManejadorDePrecio.showPrecioFinal(postre));
+        });        
+
         
     }
 }
