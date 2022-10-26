@@ -7,17 +7,20 @@ import Adicionales.Aderezo;
 public class Postre {
 	protected String sabor;
 	protected double precioParcial;
-	protected ArrayList<String> aderezos;
+	protected ArrayList<Aderezo> aderezos;
 	
 	public Postre(String sabor) {
 		this.sabor=sabor;
 		aderezos=new ArrayList<>();
 	}
-	public ArrayList<String> getAderezos() {
+	public ArrayList<Aderezo> getAderezos() {
         return aderezos;
     }
 	public void agregarAderezo() {
 		//Este método agrega aderezos
+	}
+	public void quitarAderezo(String aderezo) {
+		//Este método quita aderezos
 	}
 	public String getSabor() {
 		return sabor;
@@ -31,7 +34,7 @@ public class Postre {
 	public void setPrecioParcial(double precioParcial) {
 		this.precioParcial = precioParcial;
 	}
-	public void setAderezos(ArrayList<String> aderezos) {
+	public void setAderezos(ArrayList<Aderezo> aderezos) {
 		this.aderezos = aderezos;
 	}
 	
