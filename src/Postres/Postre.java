@@ -19,11 +19,13 @@ public class Postre {
 	public ArrayList<Aderezo> getAderezos() {
         return aderezos;
     }
+	
 	public void agregarAderezo(Aderezo aderezo) {
 		aderezos.add(aderezo);
 	}
 	public void quitarAderezo(Aderezo aderezo) {
 		aderezos.remove(aderezo);
+
 	}
 	public String getSabor() {
 		return sabor;
