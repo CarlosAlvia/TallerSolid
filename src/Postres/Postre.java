@@ -3,15 +3,18 @@ package Postres;
 import java.util.ArrayList;
 
 import Adicionales.Aderezo;
+import Leche.LecheEntera;
 
 public class Postre {
 	protected String sabor;
 	protected double precioParcial;
 	protected ArrayList<Aderezo> aderezos;
+        protected LecheEntera Tipoleche;
 	
-	public Postre(String sabor) {
+	public Postre(String sabor,LecheEntera Tipoleche) {
 		this.sabor=sabor;
 		aderezos=new ArrayList<>();
+                this.Tipoleche = Tipoleche;
 	}
 	public ArrayList<Aderezo> getAderezos() {
         return aderezos;
