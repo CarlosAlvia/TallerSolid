@@ -9,7 +9,6 @@ public class Postre {
 	protected String sabor;
 	protected double precioParcial;
 	protected ArrayList<Aderezo> aderezos;
-        protected LecheEntera Tipoleche;
 	
 	public Postre(String sabor) {
 		this.sabor=sabor;
