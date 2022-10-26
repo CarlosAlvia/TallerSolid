@@ -17,10 +17,10 @@ public class Postre {
         return aderezos;
     }
 	public void agregarAderezo(Aderezo aderezo) {
-		//Este método agrega aderezos
+		aderezos.add(aderezo);
 	}
 	public void quitarAderezo(Aderezo aderezo) {
-		//Este método quita aderezos
+		aderezos.remove(aderezo);
 	}
 	public String getSabor() {
 		return sabor;
