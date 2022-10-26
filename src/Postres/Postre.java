@@ -16,10 +16,10 @@ public class Postre {
 	public ArrayList<Aderezo> getAderezos() {
         return aderezos;
     }
-	public void agregarAderezo() {
+	public void agregarAderezo(Aderezo aderezo) {
 		//Este método agrega aderezos
 	}
-	public void quitarAderezo(String aderezo) {
+	public void quitarAderezo(Aderezo aderezo) {
 		//Este método quita aderezos
 	}
 	public String getSabor() {
