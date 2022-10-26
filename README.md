@@ -14,7 +14,7 @@ Si, porque se incumple con principio Open-Closed ya que son clases realmente par
     
 ***2. Clases Procesos.OperacionesAderezo y Postre. ¿Es necesaria la clase OperacionesAderezo?. Se puede incluir dentro de postre un método para agregar un aderezo y para quitar un aderezo.***
 
-Incumple con el principio Open-Closed y Single Responsability, porque no esta cerrado a cambio ya que cada que cada vez que se ceraba un nuevo postre se creaba un nuevo metodo.
+Incumple con el principio Open-Closed y Single Responsability, porque no está cerrado a cambio ya que cada que cada vez que se creaba un nuevo postre se creaba un nuevo metodo.    
 
 ***3. Métodos calcularPrecioFinal() y  showPrecioFinal() están muy relacionados, deben estar en otra clase por si cambia la fórmula de cálculo. La clase nueva debe llamarse Procesos.ManejadorDePrecio.***
 
